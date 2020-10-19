@@ -1,0 +1,58 @@
+﻿@model WebApi_Mvc_Crud.Models.EmpClass
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EmpClass</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Empid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empemail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empemail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emplocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emplocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empdesgination)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empdesgination)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.Empid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

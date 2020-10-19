@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebApi_Mvc_Crud.Newempreg>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="alert alert-info">Employee Information</h2><br />
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Empname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empemail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emplocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpDesgination)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empemail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emplocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmpDesgination)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Empid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Empid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Empid })
+        </td>
+    </tr>
+}
+
+</table>

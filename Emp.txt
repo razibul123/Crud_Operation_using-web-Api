@@ -1,0 +1,5 @@
+Empid,Empname,Empemail,Emplocation,EmpDesgination
+5,Robiul alam,robi@gmail.com,gazipur,Technicien
+7,Robikiron,robikiron@gmail.com,Dhaka,.net devolaper
+8,Mamun,mamun@gmail.com,gazipur,Technicien
+9,Razibul Hasan,razibul@gmail.com,gazipur,.net devolaper

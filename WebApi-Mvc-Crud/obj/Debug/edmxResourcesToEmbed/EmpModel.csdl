@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmpDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Newempreg">
+    <Key>
+      <PropertyRef Name="Empid" />
+    </Key>
+    <Property Name="Empid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Empname" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Empemail" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Emplocation" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="EmpDesgination" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="EmpDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Newempregs" EntityType="Self.Newempreg" />
+  </EntityContainer>
+</Schema>
